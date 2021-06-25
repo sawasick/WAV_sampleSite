@@ -17,18 +17,29 @@
 			content="卓展2021のWAV卓の勉強会にて使用するサンプルサイトです。"
 		/>
 		<!-- 外部cssファイルの読み込み -->
+		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
 	<body>
-		<header>
-			<img src="images/wav_logo_white.png" alt="ロゴイメージ" />
-			<ul>
-				<li>Concept</li>
-				<li>What we do</li>
-				<li>Members</li>
-				<li>TAKU-TEN</li>
-			</ul>
+		<header class="header">
+			<div class="header-content-wrapper">
+				<div class="header-logo-wrapper">
+					<a href="#">
+						<img
+							src="images/wav_logo_white.png"
+							alt="ロゴイメージ"
+							class="header-logo img-full"
+						/>
+					</a>
+				</div>
+				<ul class="header-nav txt-xsmall">
+					<li><a href="#">Concept</a></li>
+					<li><a href="#">What we do</a></li>
+					<li><a href="#">Members</a></li>
+					<li><a href="#">TAKU-TEN</a></li>
+				</ul>
+			</div>
 		</header>
 
 		<section>
