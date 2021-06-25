@@ -135,3 +135,50 @@ body {
 	text-decoration: none;
 	color: var(--mainColor);
 }
+
+/* メインコンテンツ */
+.section {
+	width: 100%;
+	/* background-color: var(--baseColor); */
+}
+
+/* MV */
+.section-mv {
+	position: relative;
+}
+.mv-bg-wrapper {
+	position: relative;
+}
+.mv-contents-wrapper {
+	position: absolute;
+	top: 0;
+}
+.mv-contents-wrapper p {
+	background-color: var(--baseColor);
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+}
+.mv-contents-wrapper h1 {
+	margin-left: 15vw;
+}
+
+h2 {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin: 0 auto;
+	width: 300px;
+}
+
+h2:before {
+	transform: skewX(-45deg);
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-color: #00fbff;
+}
