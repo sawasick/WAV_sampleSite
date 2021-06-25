@@ -1,0 +1,137 @@
+:root {
+	/* サイトで使用するカラー */
+	--baseColor: #313131;
+	--mainColor: #fff;
+	--accentColor1: #82cbca;
+	--accentColor2: #12a095;
+	--accentColor3: #b92c92;
+	--accentColor4: #ed6d00;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Std W8',
+		'Noto Sans JP', 'Hiragino Sans', Meiryo, sans-serif;
+	color: var(--mainColor);
+}
+/* フォントの設定 */
+@font-face {
+	font-family: 'smartFont';
+	src: url(../fonts/03SmartFontUI.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'mPlus1p-regular';
+	src: url(../fonts/MPLUS1p-Regular.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'mPlus1p-light';
+	src: url(../fonts/MPLUS1p-Light.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'opinionPro';
+	src: url(../fonts/Opinion\ Pro\ Light.otf);
+	font-weight: 400;
+}
+
+/* フォントサイズの設定 */
+.txt-xxxlarge {
+	font-size: 48px !important;
+}
+
+.txt-xxlarge {
+	font-size: 36px !important;
+}
+
+.txt-large {
+	font-size: 32px !important;
+}
+
+.txt-xxmedium {
+	font-size: 28px !important;
+}
+
+.txt-xmedium {
+	font-size: 24px !important;
+}
+
+.txt-medium {
+	font-size: 22px !important;
+}
+
+.txt-xsmall {
+	font-size: 20px !important;
+}
+
+.txt-xxsmall {
+	font-size: 18px !important;
+}
+
+/* テキスト配置 */
+.txt-left {
+	text-align: left;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+.txt-right {
+	text-align: right;
+}
+
+/* 画像サイズ */
+.img-full {
+	width: 100%;
+}
+
+/* 基本的には隠しておく要素につける */
+.is-hide {
+	display: none;
+}
+
+/* ヘッダー */
+.header {
+	background-color: var(--baseColor);
+	width: 100%;
+	height: 80px;
+}
+
+.header-content-wrapper {
+	max-width: 1040px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.header-logo-wrapper {
+	width: 96px;
+}
+
+.header-nav {
+	display: flex;
+	list-style: none;
+	font-family: 'opinionPro';
+}
+
+.header-nav li {
+	margin: 0 1.2vw;
+}
+
+.header-nav a {
+	text-decoration: none;
+	color: var(--mainColor);
+}
