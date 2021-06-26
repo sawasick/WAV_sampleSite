@@ -216,6 +216,11 @@ body {
 .what-list-wrapper {
 	display: flex;
 	align-items: center;
+	margin: 0 15vw;
+	justify-content: space-between;
+}
+.what-list-wrapper div {
+	width: 33vw;
 }
 
 /* Members */
