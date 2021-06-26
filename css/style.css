@@ -212,6 +212,12 @@ body {
 	background-color: var(--accentColor2);
 }
 
+/* もうちょいいい書き方→ ul li{} */
+.what-list-wrapper {
+	display: flex;
+	align-items: center;
+}
+
 /* Members */
 .section-title-members:before {
 	background-color: var(--accentColor3);
