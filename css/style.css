@@ -16,10 +16,10 @@
 
 html,
 body {
-	font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Std W8',
-		'Noto Sans JP', 'Hiragino Sans', Meiryo, sans-serif;
+	font-family: 'mPlus1p-regular', sans-serif;
 	color: var(--mainColor);
 }
+
 /* フォントの設定 */
 @font-face {
 	font-family: 'smartFont';
@@ -91,6 +91,14 @@ body {
 	text-align: right;
 }
 
+/* 繰り返し使う余白 */
+.section-bottom {
+	margin-bottom: 80px !important;
+}
+.section-title-top {
+	margin-top: 100px !important;
+}
+
 /* 画像サイズ */
 .img-full {
 	width: 100%;
@@ -139,7 +147,13 @@ body {
 /* メインコンテンツ */
 .section {
 	width: 100%;
-	/* background-color: var(--baseColor); */
+	background-color: var(--baseColor);
+	margin: 0;
+}
+.content-wrapper {
+	max-width: 1040px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 /* MV */
@@ -149,7 +163,7 @@ body {
 .mv-bg-wrapper {
 	position: relative;
 }
-.mv-contents-wrapper {
+.mv-content-wrapper {
 	position: absolute;
 	width: 100%;
 	max-width: 1040px;
@@ -159,7 +173,7 @@ body {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 }
-.mv-contents-wrapper p {
+.mv-content-wrapper p {
 	background-color: var(--baseColor);
 	font-family: 'smartFont';
 	position: absolute;
@@ -169,8 +183,14 @@ body {
 	-ms-transform: translate(0, -50%);
 	z-index: 1;
 }
-.mv-contents-wrapper h1 {
+.mv-content-wrapper h1 {
 	margin: 0 0 0 12vw;
+}
+
+/* Concept */
+.concept-theme {
+	font-family: 'mPlus1p-light';
+	color: var(--accentColor1);
 }
 
 h2 {
