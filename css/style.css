@@ -93,8 +93,17 @@ body {
 }
 
 /* 繰り返し使う余白 */
-.section-bottom {
+.layout-bottom-small {
+	margin-bottom: 40px !important;
+}
+.layout-bottom-middle {
 	margin-bottom: 80px !important;
+}
+.layout-bottom-xmiddle {
+	margin-bottom: 100px !important;
+}
+.layout-bottom-xxmiddle {
+	margin-bottom: 115px !important;
 }
 .section-title-top {
 	margin-top: 100px !important;
