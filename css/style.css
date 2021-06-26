@@ -159,6 +159,7 @@ body {
 /* MV */
 .section-mv {
 	position: relative;
+	background-color: #fff;
 }
 .mv-bg-wrapper {
 	position: relative;
