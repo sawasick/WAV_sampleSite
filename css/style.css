@@ -18,6 +18,7 @@ html,
 body {
 	font-family: 'mPlus1p-regular', sans-serif;
 	color: var(--mainColor);
+	line-height: 1.6;
 }
 
 /* フォントの設定 */
@@ -42,7 +43,7 @@ body {
 @font-face {
 	font-family: 'opinionPro';
 	src: url(../fonts/Opinion\ Pro\ Light.otf);
-	font-weight: 400;
+	font-weight: 300;
 }
 
 /* フォントサイズの設定 */
@@ -189,20 +190,62 @@ body {
 }
 
 /* Concept */
+.section-title-concept:before {
+	background-color: var(--accentColor1);
+}
 .concept-theme {
 	font-family: 'mPlus1p-light';
 	color: var(--accentColor1);
 }
 
-h2 {
-	position: relative;
-	z-index: 1;
-	text-align: center;
-	margin: 0 auto;
-	width: 300px;
+/* What we do */
+.section-title-whatWeDo:before {
+	background-color: var(--accentColor2);
 }
 
-h2:before {
+/* Members */
+.section-title-members:before {
+	background-color: var(--accentColor3);
+}
+
+/* TAKU-TEn */
+.section-title-taku-ten:before {
+	background-color: var(--accentColor4);
+}
+
+.section-title-l {
+	position: relative;
+	font-family: 'opinionPro';
+	width: 460px;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 300;
+	z-index: 1;
+}
+.section-title-r {
+	position: relative;
+	font-family: 'opinionPro';
+	width: 460px;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 300;
+	z-index: 1;
+}
+
+/* 左向きの平行四辺形 */
+.section-title-l:before {
+	transform: skewX(45deg);
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+/* 右向きの平行四辺形 */
+.section-title-r:before {
 	transform: skewX(-45deg);
 	content: '';
 	position: absolute;
@@ -211,5 +254,4 @@ h2:before {
 	left: 0;
 	right: 0;
 	z-index: -1;
-	background-color: #00fbff;
 }
