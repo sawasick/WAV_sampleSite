@@ -109,6 +109,7 @@ body {
 	margin-top: 100px !important;
 }
 
+
 /* 画像サイズ */
 .img-full {
 	width: 100%;
@@ -124,6 +125,8 @@ body {
 	background-color: var(--baseColor);
 	width: 100%;
 	height: 80px;
+	position: fixed;
+	z-index: 3;
 }
 
 .header-content-wrapper {
@@ -170,6 +173,8 @@ body {
 .section-mv {
 	position: relative;
 	background-color: #fff;
+	/* header分の余白 */
+	padding-top: 80px;
 }
 .mv-bg-wrapper {
 	position: relative;
@@ -211,6 +216,7 @@ body {
 .section-title-whatWeDo:before {
 	background-color: var(--accentColor2);
 }
+
 
 /* もうちょいいい書き方→ ul li{} */
 .what-list-wrapper {
@@ -269,4 +275,21 @@ body {
 	left: 0;
 	right: 0;
 	z-index: -1;
+}
+
+footer{
+	background-color: var(--baseColor);
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+footer img{
+	height:60%;
+	position: absolute;
+	right:20vw;
+	top:20%;
 }
