@@ -257,6 +257,7 @@ body {
 
 #taku-ten span{
 	display: inline-block;
+	margin:auto;
 }
 #taku-ten p{
 	color:var(--mainColor);
@@ -268,16 +269,18 @@ body {
 
 	cursor: pointer;
 }
+
+#taku-ten a{
+	transition: 0.5s;
+	text-decoration: none;
+}
 #taku-ten a :hover{
 	transition: 0.5s;
 	background-color: var(--mainColor);
 	color: var(--baseColor);
 }
-#taku-ten p :visited{
+#taku-ten a :visited{
 	color: var(--mainColor);
-}
-#taku-ten a{
-	text-decoration: none;
 }
 
 
