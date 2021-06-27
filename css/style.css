@@ -198,6 +198,9 @@ body {
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
 	z-index: 1;
+
+	width:35%;
+	padding: 10px 20px;
 }
 .mv-content-wrapper h1 {
 	margin: 0 0 0 12vw;
@@ -229,10 +232,55 @@ body {
 	background-color: var(--accentColor3);
 }
 
+#members ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width:1040px;
+}
+#members li{
+	width:25%;
+	min-width: 200px;
+	list-style: none;
+}
+#members img{
+	width:100%;
+}
+.members-theme{
+	color:var(--accentColor3);
+}
+
 /* TAKU-TEn */
 .section-title-taku-ten:before {
 	background-color: var(--accentColor4);
 }
+
+#taku-ten span{
+	display: inline-block;
+}
+#taku-ten p{
+	color:var(--mainColor);
+	width:25vw;
+	padding:10px 5%;
+	margin:auto;
+	border:solid 1px var(--accentColor4);
+	border-radius: 21px;
+
+	cursor: pointer;
+}
+#taku-ten a :hover{
+	transition: 0.5s;
+	background-color: var(--mainColor);
+	color: var(--baseColor);
+}
+#taku-ten p :visited{
+	color: var(--mainColor);
+}
+#taku-ten a{
+	text-decoration: none;
+}
+
+
 
 .section-title-l {
 	position: relative;
@@ -275,6 +323,11 @@ body {
 	left: 0;
 	right: 0;
 	z-index: -1;
+}
+
+.message{
+	color:var(--baseColor);
+
 }
 
 footer{
