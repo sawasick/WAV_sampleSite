@@ -200,6 +200,16 @@ body {
 }
 
 /* 右向きの平行四辺形 */
+.section-title-r {
+	position: relative;
+	font-family: 'opinionPro';
+	width: 460px;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 300;
+	z-index: 1;
+}
+
 .section-title-r:before {
 	transform: skewX(-45deg);
 	content: '';
@@ -209,16 +219,6 @@ body {
 	left: 0;
 	right: 0;
 	z-index: -1;
-}
-
-.section-title-r {
-	position: relative;
-	font-family: 'opinionPro';
-	width: 460px;
-	text-align: center;
-	margin: 0 auto;
-	font-weight: 300;
-	z-index: 1;
 }
 
 /* MV */
@@ -419,22 +419,59 @@ body {
 	}
 
 	/* 繰り返し使う余白 */
+	.layout-bottom-xxmiddle-sp {
+		margin-bottom: 60px !important;
+	}
+	.layout-bottom-xmiddle-sp {
+		margin-bottom: 40px !important;
+	}
+	.layout-bottom-xxsmall-sp {
+		margin-bottom: 20px !important;
+	}
+
 	.layout-bottom-middle {
 		margin-bottom: 30px !important;
+	}
+
+	.section-title-top {
+		margin-top: 60px !important;
 	}
 
 	/* ヘッダー */
 	.header {
 		height: 50px;
 	}
+
 	.header-content-wrapper {
 		width: 90%;
 	}
+
 	.header-logo-wrapper {
 		width: 54px;
 	}
+
 	.header-nav {
 		display: none;
+	}
+	/* メインコンテンツでよく使うものt */
+	.content-wrapper {
+		width: 80vw;
+	}
+
+	/* 左向きの平行四辺形 */
+	.section-title-l {
+		width: 70vw;
+	}
+
+	.section-title-l:before {
+	}
+
+	/* 右向きの平行四辺形 */
+	.section-title-r:before {
+	}
+
+	.section-title-r {
+		width: 70vw;
 	}
 
 	/* MV */
