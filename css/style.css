@@ -288,7 +288,7 @@ body {
 }
 
 .what-list-wrapper:last-child {
-	margin-bottom: 100px;
+	/* margin-bottom: 100px; */
 }
 
 .what-list-wrapper div {
@@ -504,5 +504,23 @@ body {
 	}
 	.mv-content-wrapper h1 {
 		margin: 0;
+	}
+
+	/* What we do */
+	.what-list-wrapper {
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 100%;
+	}
+	.what-list-wrapper div {
+		width: 68%;
+	}
+	.what-list-wrapper:first-child {
+		margin-bottom: 40px;
+	}
+	.what-category::before {
+		width: 12px;
+		height: 34px;
+		left: -18px;
 	}
 }
