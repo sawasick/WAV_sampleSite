@@ -17,11 +17,12 @@
 			content="卓展2021のWAV卓の勉強会にて使用するサンプルサイトです。"
 		/>
 		<!-- 外部cssファイルの読み込み -->
-		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
 	<body>
+		<!-- ▼ヘッダーここから -->
 		<header class="header">
 			<div class="header-content-wrapper">
 				<div class="header-logo-wrapper">
@@ -41,7 +42,9 @@
 				</ul>
 			</div>
 		</header>
+		<!-- ▲ヘッダーここまで -->
 
+		<!-- MVセクションここから -->
 		<section class="section layout-bottom-middle section-mv">
 			<div class="mv-bg-wrapper">
 				<img src="images/bg.png" alt="MVの背景画像" class="img-full" />
@@ -53,7 +56,9 @@
 				</h1>
 			</div>
 		</section>
+		<!-- ▲MVセクションここまで -->
 
+		<!-- ▼Conceptここから -->
 		<section id="concept" class="section layout-bottom-middle">
 			<div class="content-wrapper txt-center">
 				<h2
@@ -78,9 +83,11 @@
 				</p>
 			</div>
 		</section>
+		<!-- ▲Conceptここまで -->
 
+		<!-- ▼What we do ここから -->
 		<section id="whatWeDo" class="section layout-bottom-middle">
-			<div class="content-wrapper txt-center">
+			<div class="content-wrapper">
 				<h2
 					class="
 						section-title-r section-title-top section-title-whatWeDo
@@ -92,9 +99,15 @@
 				</h2>
 				<ul class="layout-bottom-xmiddle">
 					<li class="what-list-wrapper">
-						<img src="images/web.png" alt="Web制作で使用する技術" />
+						<div>
+							<img
+								src="images/web.png"
+								alt="Web制作で使用する技術"
+								class="img-full"
+							/>
+						</div>
 						<div class="txt-left">
-							<p class="txt-xxmedium">Web</p>
+							<p class="txt-xxmedium what-category">Web</p>
 							<p class="txt-medium">
 								html,css,javascriptを用いた<br />
 								サイトの制作を行います。
@@ -102,9 +115,15 @@
 						</div>
 					</li>
 					<li class="what-list-wrapper">
-						<img src="images/music.png" alt="楽曲制作で使用するDAWソフト" />
+						<div>
+							<img
+								src="images/music.png"
+								alt="楽曲制作で使用するDAWソフト"
+								class="img-full"
+							/>
+						</div>
 						<div class="txt-left">
-							<p class="txt-xxmedium">音楽</p>
+							<p class="txt-xxmedium what-category">音楽</p>
 							<p class="txt-medium">
 								DAWソフトを用いた<br />
 								楽曲の制作を行います。
@@ -114,7 +133,9 @@
 				</ul>
 			</div>
 		</section>
+		<!-- ▲What we doここまで -->
 
+		<!-- ▼Membersここから -->
 		<section id="members" class="section layout-bottom-middle">
 			<div class="content-wrapper txt-center">
 				<h2
@@ -126,32 +147,50 @@
 				>
 					Members
 				</h2>
-				<ul class="layout-bottom-xmiddle">
+				<ul class="members-list layout-bottom-xmiddle">
 					<li>
-						<img src="images/support_takucho.png" alt="さわし" />
+						<img
+							src="images/support_takucho.png"
+							alt="さわし"
+							class="img-full"
+						/>
 						<p class="txt-xxmedium members-theme">卓長</p>
 						<p class="txt-xmedium">4M さわし</p>
 					</li>
 					<li>
-						<img src="images/support_shakurri.png" alt="しゃくり" />
+						<img
+							src="images/support_shakurri.png"
+							alt="しゃくり"
+							class="img-full"
+						/>
 						<p class="txt-xxmedium members-theme">Webサポート</p>
 						<p class="txt-xmedium">4M しゃくり</p>
 					</li>
 					<li>
-						<img src="images/support_bomaye.png" alt="ボマイェ" />
+						<img
+							src="images/support_bomaye.png"
+							alt="ボマイェ"
+							class="img-full"
+						/>
 						<p class="txt-xxmedium members-theme">音楽サポート</p>
 						<p class="txt-xmedium">5N ボマイェ</p>
 					</li>
 					<li>
-						<img src="images/support_schumacher.png" alt="シューマッハ" />
+						<img
+							src="images/support_schumacher.png"
+							alt="シューマッハ"
+							class="img-full"
+						/>
 						<p class="txt-xxmedium members-theme">音楽サポート</p>
 						<p class="txt-xmedium">M1 シューマッハ</p>
 					</li>
 				</ul>
 			</div>
 		</section>
+		<!-- ▲Membersここまで -->
 
-		<section id="taku-ten" class="section layout-bottom-middle">
+		<!-- ▼TAKU-TENここから -->
+		<section id="taku-ten" class="section layout-bottom-large">
 			<div class="content-wrapper txt-center">
 				<h2
 					class="
@@ -162,31 +201,45 @@
 				>
 					TAKU-TEN
 				</h2>
-				<span class="txt-medium txt-left layout-bottom-middle">
+				<p class="taku-ten-desc txt-medium txt-left layout-bottom-middle">
 					学生主体の作品展です。<br />
 					4年生がプロジェクトを立ち上げ、<br />
 					それに賛同した人たちが、学科・学年の垣根を超えて<br />
 					集まり作品を制作します。
-				</span>
-				<a href="https://geikou-takuten.com/">
-					<p class="layout-bottom-xmiddle txt-xxmedium">
-						卓展2020サイトへ
-					</p>
+				</p>
+				<a href="https://geikou-takuten.com/" class="taku-ten-link">
+					<p class="layout-bottom-xmiddle txt-xxmedium">卓展2020サイトへ</p>
 				</a>
 			</div>
 		</section>
+		<!-- ▲TAKU-TENここまで -->
 
-		<p class="message layout-bottom-middle txt-xmedium txt-center">
+		<p class="message layout-bottom-large txt-xmedium txt-center">
 			WAVを通じてWebサイトや音楽の<br />
-			表現の楽しさを知って欲しいです。
+			表現の楽しさを知って欲しいです
 		</p>
-		<footer>
-			<p class="txt-xxsmall txt-center">©︎2021 WAV All Rights Reserved</p>
-			<a href="#">
-				<img src="images/toTop.png" alt="TOPに戻る" />
-			</a>
+
+		<!-- ▼フッターここから -->
+		<footer class="footer">
+			<div class="footer-content-wrapper">
+				<p class="txt-xxsmall txt-center copyright">
+					©︎2021 WAV All Rights Reserved
+				</p>
+				<p class="totop">
+					<a href="#">
+						<img src="images/toTop.png" alt="TOPに戻る" class="img-full" />
+					</a>
+				</p>
+			</div>
 		</footer>
+		<!-- ▲フッターここまで -->
+
 		<!-- 外部javascriptファイルの読み込み -->
-		<!-- <script type="text/javascript" src="js/main.js" defer></script> -->
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+		<script type="text/javascript" src="js/main.js" defer></script>
 	</body>
 </html>
