@@ -226,11 +226,31 @@ body {
 .what-list-wrapper {
 	display: flex;
 	align-items: center;
-	margin: 0 15vw;
+	margin: 0 auto;
+	width: 72%;
 	justify-content: space-between;
 }
+.what-list-wrapper:first-child {
+	margin-bottom: 80px;
+}
+.what-list-wrapper:last-child {
+	margin-bottom: 100px;
+}
 .what-list-wrapper div {
-	width: 33vw;
+	width: 42%;
+}
+.what-category {
+	position: relative;
+}
+.what-category::before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 45px;
+	background-color: var(--accentColor2);
+	position: absolute;
+	/* top: -2px; */
+	left: -25px;
 }
 
 /* Members */
