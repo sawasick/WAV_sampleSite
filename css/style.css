@@ -528,4 +528,12 @@ body {
 		width: 80%;
 		border-radius: 10px;
 	}
+
+	/* フッター */
+	.footer {
+		height: 50px;
+	}
+	.totop {
+		display: none;
+	}
 }
