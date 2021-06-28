@@ -105,6 +105,9 @@ body {
 .layout-bottom-xxmiddle {
 	margin-bottom: 115px !important;
 }
+.layout-bottom-large {
+	margin-bottom: 130px !important;
+}
 .section-title-top {
 	margin-top: 100px !important;
 }
@@ -124,6 +127,8 @@ body {
 	background-color: var(--baseColor);
 	width: 100%;
 	height: 80px;
+	position: fixed;
+	z-index: 3;
 }
 
 .header-content-wrapper {
@@ -170,6 +175,8 @@ body {
 .section-mv {
 	position: relative;
 	background-color: #fff;
+	/* header分の余白 */
+	padding-top: 80px;
 }
 .mv-bg-wrapper {
 	position: relative;
@@ -193,18 +200,21 @@ body {
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
 	z-index: 1;
+
+	width: 35%;
+	padding: 10px 20px;
 }
 .mv-content-wrapper h1 {
 	margin: 0 0 0 12vw;
 }
 
 /* Concept */
-.section-title-concept:before {
-	background-color: var(--accentColor1);
-}
 .concept-theme {
 	font-family: 'mPlus1p-light';
 	color: var(--accentColor1);
+}
+.section-title-concept:before {
+	background-color: var(--accentColor1);
 }
 
 /* What we do */
@@ -228,9 +238,51 @@ body {
 	background-color: var(--accentColor3);
 }
 
-/* TAKU-TEn */
+.members-theme {
+	color: var(--accentColor3);
+}
+
+.members-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1040px;
+}
+.members-list li {
+	width: 25%;
+	min-width: 200px;
+	list-style: none;
+}
+
+/* TAKU-TEN */
 .section-title-taku-ten:before {
 	background-color: var(--accentColor4);
+}
+
+.taku-ten-desc {
+	display: inline-block;
+}
+
+.taku-ten-link {
+	transition: 0.5s;
+	text-decoration: none;
+}
+.taku-ten-link :hover {
+	transition: 0.5s;
+	background-color: var(--mainColor);
+	color: var(--baseColor);
+}
+.taku-ten-link :visited {
+	color: var(--mainColor);
+}
+.taku-ten-link p {
+	color: var(--mainColor);
+	width: 25vw;
+	padding: 10px 5%;
+	margin: auto;
+	border: solid 1px var(--accentColor4);
+	border-radius: 21px;
+	cursor: pointer;
 }
 
 .section-title-l {
@@ -274,4 +326,29 @@ body {
 	left: 0;
 	right: 0;
 	z-index: -1;
+}
+
+.message {
+	color: var(--baseColor);
+}
+
+.footer {
+	background-color: var(--baseColor);
+	height: 80px;
+}
+.footer-content-wrapper {
+	max-width: 1040px;
+	height: 100%;
+	margin: 0 auto;
+}
+.copyright {
+	position: relative;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.totop {
+	width: 2.5vw;
+	margin-left: auto;
 }
