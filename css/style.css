@@ -460,18 +460,12 @@ body {
 
 	/* 左向きの平行四辺形 */
 	.section-title-l {
-		width: 70vw;
-	}
-
-	.section-title-l:before {
+		width: 260px;
 	}
 
 	/* 右向きの平行四辺形 */
-	.section-title-r:before {
-	}
-
 	.section-title-r {
-		width: 70vw;
+		width: 260px;
 	}
 
 	/* MV */
@@ -527,5 +521,11 @@ body {
 	/* Members */
 	.members-list li {
 		width: 46%;
+	}
+
+	/* TAKU-TEN */
+	.taku-ten-link p {
+		width: 80%;
+		border-radius: 10px;
 	}
 }
