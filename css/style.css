@@ -443,7 +443,7 @@ body {
 	}
 
 	.header-content-wrapper {
-		width: 90%;
+		width: 80%;
 	}
 
 	.header-logo-wrapper {
@@ -453,6 +453,69 @@ body {
 	.header-nav {
 		display: none;
 	}
+
+	.header-nav-list {
+		display: none;
+	}
+
+	.header-nav-sp {
+		display: none;
+		position: fixed;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background-color: var(--mainColor);
+	}
+
+	.header-nav-sp-list {
+		width: 60%;
+		margin: auto;
+		list-style: none;
+		position: relative;
+		top: 10%;
+		font-family: 'opinionPro';
+	}
+
+	.header-nav-sp-list li {
+		margin-bottom: 40px;
+	}
+
+	.header-nav-sp-list a {
+		text-decoration: none;
+		color: var(--baseColor);
+	}
+	.header-nav-icon-sp {
+		width: 20px;
+		height: 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 100;
+	}
+	.header-nav-icon-sp-bar1,
+	.header-nav-icon-sp-bar2,
+	.header-nav-icon-sp-bar3 {
+		position: relative;
+		width: 100%;
+		height: 2px;
+		background-color: var(--mainColor);
+		border-radius: 5px;
+		transform-origin: left;
+		transition: all 0.3s ease-out;
+	}
+
+	.is-open .header-nav-icon-sp-bar1 {
+		transform: rotateZ(45deg);
+	}
+	.is-open .header-nav-icon-sp-bar2 {
+		transform: scale(0);
+	}
+	.is-open .header-nav-icon-sp-bar3 {
+		transform: rotateZ(-45deg);
+	}
+
 	/* メインコンテンツでよく使うものt */
 	.content-wrapper {
 		width: 80vw;
