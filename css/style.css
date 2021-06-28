@@ -394,3 +394,78 @@ body {
 	width: 2.5vw;
 	margin-left: auto;
 }
+
+/* メディアクエリ */
+@media screen and (max-width: 1040px) {
+	/* フォントサイズ */
+	.txt-large-sp {
+		font-size: 24px !important;
+	}
+
+	.txt-xxmedium-sp {
+		font-size: 22px !important;
+	}
+
+	.txt-xmedium-sp {
+		font-size: 18px !important;
+	}
+
+	.txt-medium-sp {
+		font-size: 16px !important;
+	}
+
+	.txt-small-sp {
+		font-size: 14px !important;
+	}
+
+	/* 繰り返し使う余白 */
+	.layout-bottom-middle {
+		margin-bottom: 30px !important;
+	}
+
+	/* ヘッダー */
+	.header {
+		height: 50px;
+	}
+	.header-content-wrapper {
+		width: 90%;
+	}
+	.header-logo-wrapper {
+		width: 54px;
+	}
+	.header-nav {
+		display: none;
+	}
+
+	/* MV */
+	.section-mv {
+		padding-top: 50px;
+	}
+	.mv-bg-wrapper {
+		overflow: hidden;
+		height: 52vh;
+	}
+	.mv-bg-wrapper img {
+		width: auto;
+		height: 100%;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	.mv-content-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		align-items: center;
+		width: 80%;
+	}
+	.mv-content-wrapper p {
+		position: relative;
+		top: 0;
+		width: 68%;
+		transform: translate(0, 0);
+	}
+	.mv-content-wrapper h1 {
+		margin: 0;
+	}
+}
