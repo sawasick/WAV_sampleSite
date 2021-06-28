@@ -17,7 +17,7 @@
 			content="卓展2021のWAV卓の勉強会にて使用するサンプルサイトです。"
 		/>
 		<!-- 外部cssファイルの読み込み -->
-		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
@@ -34,96 +34,154 @@
 					</a>
 				</div>
 				<ul class="header-nav txt-xsmall">
-					<li><a href="#">Concept</a></li>
-					<li><a href="#">What we do</a></li>
-					<li><a href="#">Members</a></li>
-					<li><a href="#">TAKU-TEN</a></li>
+					<li><a href="#concept">Concept</a></li>
+					<li><a href="#whatWeDo">What we do</a></li>
+					<li><a href="#members">Members</a></li>
+					<li><a href="#taku-ten">TAKU-TEN</a></li>
 				</ul>
 			</div>
 		</header>
 
-		<section>
-			<img src="images/bg.png" alt="MVの背景画像" />
-			<p>#波にノろう</p>
-			<img src="images/WAV_logo_main.png" alt="MV画像" />
+		<section class="section layout-bottom-middle section-mv">
+			<div class="mv-bg-wrapper">
+				<img src="images/bg.png" alt="MVの背景画像" class="img-full" />
+			</div>
+			<div class="mv-content-wrapper">
+				<p class="txt-xxxlarge txt-center">#波にノろう</p>
+				<h1>
+					<img src="images/WAV_logo_main.png" alt="MV画像" class="img-full" />
+				</h1>
+			</div>
 		</section>
 
-		<section>
-			<h2>Concept</h2>
-			<p>World Wide Web、ネットサーフィン、音の波形、.wav。</p>
-			<p>そういったWebや音楽の波がWAV(ウェーブ)の由来です。</p>
-			<p>#wavy</p>
-			<p>
-				WAVは「イケてる」をコンセプトに、<br />
-				Webサイトや音楽を制作する卓です。
-			</p>
+		<section id="concept" class="section layout-bottom-middle">
+			<div class="content-wrapper txt-center">
+				<h2
+					class="
+						section-title-l section-title-top section-title-concept
+						txt-large
+						layout-bottom-middle
+					"
+				>
+					Concept
+				</h2>
+				<p class="txt-medium">
+					World Wide Web、ネットサーフィン、音の波形、.wav。
+				</p>
+				<p class="txt-medium layout-bottom-xxmiddle">
+					そういったWebや音楽の波がWAV(ウェーブ)の由来です。
+				</p>
+				<p class="txt-xxlarge concept-theme layout-bottom-small">#wavy</p>
+				<p class="txt-medium layout-bottom-xmiddle">
+					WAVは「イケてる」をコンセプトに、<br />
+					Webサイトや音楽を制作する卓です。
+				</p>
+			</div>
 		</section>
 
-		<section>
-			<h2>What we do</h2>
-			<ul>
-				<li>
-					<img src="images/web.png" alt="Web制作で使用する技術" />
-					<p>Web</p>
-					<p>
-						html,css,javascriptを用いた<br />
-						サイトの制作を行います。
+		<section id="whatWeDo" class="section layout-bottom-middle">
+			<div class="content-wrapper txt-center">
+				<h2
+					class="
+						section-title-r section-title-top section-title-whatWeDo
+						txt-large
+						layout-bottom-middle
+					"
+				>
+					What we do
+				</h2>
+				<ul class="layout-bottom-xmiddle">
+					<li class="what-list-wrapper">
+						<img src="images/web.png" alt="Web制作で使用する技術" />
+						<div class="txt-left">
+							<p class="txt-xxmedium">Web</p>
+							<p class="txt-medium">
+								html,css,javascriptを用いた<br />
+								サイトの制作を行います。
+							</p>
+						</div>
+					</li>
+					<li class="what-list-wrapper">
+						<img src="images/music.png" alt="楽曲制作で使用するDAWソフト" />
+						<div class="txt-left">
+							<p class="txt-xxmedium">音楽</p>
+							<p class="txt-medium">
+								DAWソフトを用いた<br />
+								楽曲の制作を行います。
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="members" class="section layout-bottom-middle">
+			<div class="content-wrapper txt-center">
+				<h2
+					class="
+						section-title-l section-title-top section-title-members
+						txt-large
+						layout-bottom-middle
+					"
+				>
+					Members
+				</h2>
+				<ul class="layout-bottom-xmiddle">
+					<li>
+						<img src="images/support_takucho.png" alt="さわし" />
+						<p class="txt-xxmedium members-theme">卓長</p>
+						<p class="txt-xmedium">4M さわし</p>
+					</li>
+					<li>
+						<img src="images/support_shakurri.png" alt="しゃくり" />
+						<p class="txt-xxmedium members-theme">Webサポート</p>
+						<p class="txt-xmedium">4M しゃくり</p>
+					</li>
+					<li>
+						<img src="images/support_bomaye.png" alt="ボマイェ" />
+						<p class="txt-xxmedium members-theme">音楽サポート</p>
+						<p class="txt-xmedium">5N ボマイェ</p>
+					</li>
+					<li>
+						<img src="images/support_schumacher.png" alt="シューマッハ" />
+						<p class="txt-xxmedium members-theme">音楽サポート</p>
+						<p class="txt-xmedium">M1 シューマッハ</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="taku-ten" class="section layout-bottom-middle">
+			<div class="content-wrapper txt-center">
+				<h2
+					class="
+						section-title-r section-title-top section-title-taku-ten
+						txt-large
+						layout-bottom-middle
+					"
+				>
+					TAKU-TEN
+				</h2>
+				<span class="txt-medium txt-left layout-bottom-middle">
+					学生主体の作品展です。<br />
+					4年生がプロジェクトを立ち上げ、<br />
+					それに賛同した人たちが、学科・学年の垣根を超えて<br />
+					集まり作品を制作します。
+				</span>
+				<a href="https://geikou-takuten.com/">
+					<p class="layout-bottom-xmiddle txt-xxmedium">
+						卓展2020サイトへ
 					</p>
-				</li>
-				<li>
-					<img src="images/music.png" alt="楽曲制作で使用するDAWソフト" />
-					<p>音楽</p>
-					<p>
-						DAWソフトを用いた<br />
-						楽曲の制作を行います。
-					</p>
-				</li>
-			</ul>
+				</a>
+			</div>
 		</section>
 
-		<section>
-			<h2>Members</h2>
-			<ul>
-				<li>
-					<img src="images/support_takucho.png" alt="さわし" />
-					<p>卓長</p>
-					<p>4M さわし</p>
-				</li>
-				<li>
-					<img src="images/support_shakurri.png" alt="しゃくり" />
-					<p>Webサポート</p>
-					<p>4M しゃくり</p>
-				</li>
-				<li>
-					<img src="images/support_bomaye.png" alt="ボマイェ" />
-					<p>音楽サポート</p>
-					<p>5N ボマイェ</p>
-				</li>
-				<li>
-					<img src="images/support_schumacher.png" alt="シューマッハ" />
-					<p>音楽サポート</p>
-					<p>M1 シューマッハ</p>
-				</li>
-			</ul>
-		</section>
-
-		<section>
-			<h2>TAKU-TEN</h2>
-			<p>学生主体の作品展です。</p>
-			<p>
-				4年生がプロジェクトを立ち上げ、<br />
-				それに賛同した人たちが、学科・学年の垣根を超えて<br />
-				集まり作品を制作します。
-			</p>
-			<a href="https://geikou-takuten.com/">卓展2020サイトへ</a>
-		</section>
-
-		<p>
+		<p class="message layout-bottom-middle txt-xmedium txt-center">
 			WAVを通じてWebサイトや音楽の<br />
 			表現の楽しさを知って欲しいです。
 		</p>
 		<footer>
-			<p>©︎2021 WAV All Rights Reserved</p>
+			<p class="txt-xxsmall txt-center">©︎2021 WAV All Rights Reserved</p>
 			<a href="#">
 				<img src="images/toTop.png" alt="TOPに戻る" />
 			</a>

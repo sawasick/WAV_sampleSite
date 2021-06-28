@@ -16,10 +16,11 @@
 
 html,
 body {
-	font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Std W8',
-		'Noto Sans JP', 'Hiragino Sans', Meiryo, sans-serif;
+	font-family: 'mPlus1p-regular', sans-serif;
 	color: var(--mainColor);
+	line-height: 1.6;
 }
+
 /* フォントの設定 */
 @font-face {
 	font-family: 'smartFont';
@@ -42,7 +43,7 @@ body {
 @font-face {
 	font-family: 'opinionPro';
 	src: url(../fonts/Opinion\ Pro\ Light.otf);
-	font-weight: 400;
+	font-weight: 300;
 }
 
 /* フォントサイズの設定 */
@@ -91,6 +92,24 @@ body {
 	text-align: right;
 }
 
+/* 繰り返し使う余白 */
+.layout-bottom-small {
+	margin-bottom: 40px !important;
+}
+.layout-bottom-middle {
+	margin-bottom: 80px !important;
+}
+.layout-bottom-xmiddle {
+	margin-bottom: 100px !important;
+}
+.layout-bottom-xxmiddle {
+	margin-bottom: 115px !important;
+}
+.section-title-top {
+	margin-top: 100px !important;
+}
+
+
 /* 画像サイズ */
 .img-full {
 	width: 100%;
@@ -106,6 +125,8 @@ body {
 	background-color: var(--baseColor);
 	width: 100%;
 	height: 80px;
+	position: fixed;
+	z-index: 3;
 }
 
 .header-content-wrapper {
@@ -134,4 +155,197 @@ body {
 .header-nav a {
 	text-decoration: none;
 	color: var(--mainColor);
+}
+
+/* メインコンテンツ */
+.section {
+	width: 100%;
+	background-color: var(--baseColor);
+	margin: 0;
+}
+.content-wrapper {
+	max-width: 1040px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* MV */
+.section-mv {
+	position: relative;
+	background-color: #fff;
+	/* header分の余白 */
+	padding-top: 80px;
+}
+.mv-bg-wrapper {
+	position: relative;
+}
+.mv-content-wrapper {
+	position: absolute;
+	width: 100%;
+	max-width: 1040px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.mv-content-wrapper p {
+	background-color: var(--baseColor);
+	font-family: 'smartFont';
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	z-index: 1;
+
+	width:35%;
+	padding: 10px 20px;
+}
+.mv-content-wrapper h1 {
+	margin: 0 0 0 12vw;
+}
+
+/* Concept */
+.section-title-concept:before {
+	background-color: var(--accentColor1);
+}
+.concept-theme {
+	font-family: 'mPlus1p-light';
+	color: var(--accentColor1);
+}
+
+/* What we do */
+.section-title-whatWeDo:before {
+	background-color: var(--accentColor2);
+}
+
+
+/* もうちょいいい書き方→ ul li{} */
+.what-list-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+/* Members */
+.section-title-members:before {
+	background-color: var(--accentColor3);
+}
+
+#members ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width:1040px;
+}
+#members li{
+	width:25%;
+	min-width: 200px;
+	list-style: none;
+}
+#members img{
+	width:100%;
+}
+.members-theme{
+	color:var(--accentColor3);
+}
+
+/* TAKU-TEn */
+.section-title-taku-ten:before {
+	background-color: var(--accentColor4);
+}
+
+#taku-ten span{
+	display: inline-block;
+	margin:auto;
+}
+#taku-ten p{
+	color:var(--mainColor);
+	width:25vw;
+	padding:10px 5%;
+	margin:auto;
+	border:solid 1px var(--accentColor4);
+	border-radius: 21px;
+
+	cursor: pointer;
+}
+
+#taku-ten a{
+	transition: 0.5s;
+	text-decoration: none;
+}
+#taku-ten a :hover{
+	transition: 0.5s;
+	background-color: var(--mainColor);
+	color: var(--baseColor);
+}
+#taku-ten a :visited{
+	color: var(--mainColor);
+}
+
+
+
+.section-title-l {
+	position: relative;
+	font-family: 'opinionPro';
+	width: 460px;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 300;
+	z-index: 1;
+}
+.section-title-r {
+	position: relative;
+	font-family: 'opinionPro';
+	width: 460px;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 300;
+	z-index: 1;
+}
+
+/* 左向きの平行四辺形 */
+.section-title-l:before {
+	transform: skewX(45deg);
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+/* 右向きの平行四辺形 */
+.section-title-r:before {
+	transform: skewX(-45deg);
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.message{
+	color:var(--baseColor);
+
+}
+
+footer{
+	background-color: var(--baseColor);
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+footer img{
+	height:60%;
+	position: absolute;
+	right:20vw;
+	top:20%;
 }
