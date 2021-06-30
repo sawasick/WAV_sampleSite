@@ -163,6 +163,12 @@ body {
 	text-decoration: none;
 	color: var(--mainColor);
 }
+.header-sp-nav {
+	display: none;
+}
+.header-sp-icon-wrap {
+	display: none;
+}
 
 /* メインコンテンツでよく使うもの */
 .section {
@@ -327,7 +333,7 @@ body {
 
 .members-list li {
 	width: 25%;
-	/* min-width: 200px; */
+	min-width: 150px;
 	list-style: none;
 }
 
@@ -443,7 +449,7 @@ body {
 	}
 
 	.header-content-wrapper {
-		width: 80%;
+		width: 90%;
 	}
 
 	.header-logo-wrapper {
@@ -454,38 +460,39 @@ body {
 		display: none;
 	}
 
-	.header-nav-list {
+	.nav-window {
 		display: none;
 	}
 
-	.header-nav-sp {
+	.header-sp-nav {
 		display: none;
 		position: fixed;
 		top: 50px;
 		left: 0;
 		width: 100%;
-		height: calc(100vh - 50px);
+		height: 100vh;
 		background-color: var(--mainColor);
 	}
 
-	.header-nav-sp-list {
+	.header-sp-nav-list {
 		width: 60%;
 		margin: auto;
 		list-style: none;
-		position: relative;
-		top: 10%;
-		font-family: 'opinionPro';
 	}
 
-	.header-nav-sp-list li {
-		margin-bottom: 40px;
+	.header-sp-nav-list li {
+		text-align: center;
+		margin-top: 14vh;
 	}
 
-	.header-nav-sp-list a {
-		text-decoration: none;
+	.header-sp-nav-list a {
 		color: var(--baseColor);
+		text-decoration: none;
+		text-align: center;
+		width: 100%;
 	}
-	.header-nav-icon-sp {
+
+	.header-sp-icon-wrap {
 		width: 20px;
 		height: 16px;
 		display: flex;
@@ -494,9 +501,10 @@ body {
 		justify-content: space-between;
 		z-index: 100;
 	}
-	.header-nav-icon-sp-bar1,
-	.header-nav-icon-sp-bar2,
-	.header-nav-icon-sp-bar3 {
+
+	.header-sp-icon-bar1,
+	.header-sp-icon-bar2,
+	.header-sp-icon-bar3 {
 		position: relative;
 		width: 100%;
 		height: 2px;
@@ -506,13 +514,13 @@ body {
 		transition: all 0.3s ease-out;
 	}
 
-	.is-open .header-nav-icon-sp-bar1 {
+	.is-open .header-sp-icon-bar1 {
 		transform: rotateZ(45deg);
 	}
-	.is-open .header-nav-icon-sp-bar2 {
+	.is-open .header-sp-icon-bar2 {
 		transform: scale(0);
 	}
-	.is-open .header-nav-icon-sp-bar3 {
+	.is-open .header-sp-icon-bar3 {
 		transform: rotateZ(-45deg);
 	}
 
@@ -523,12 +531,18 @@ body {
 
 	/* 左向きの平行四辺形 */
 	.section-title-l {
-		width: 260px;
+		width: 70vw;
+	}
+
+	.section-title-l:before {
 	}
 
 	/* 右向きの平行四辺形 */
+	.section-title-r:before {
+	}
+
 	.section-title-r {
-		width: 260px;
+		width: 70vw;
 	}
 
 	/* MV */
@@ -581,22 +595,12 @@ body {
 		left: -18px;
 	}
 
-	/* Members */
-	.members-list li {
-		width: 46%;
-	}
-
-	/* TAKU-TEN */
 	.taku-ten-link p {
-		width: 80%;
-		border-radius: 10px;
-	}
-
-	/* フッター */
-	.footer {
-		height: 50px;
-	}
-	.totop {
-		display: none;
+		color: var(--mainColor);
+		width: 80vw;
+		margin: auto;
+		border: solid 1px var(--accentColor4);
+		border-radius: 21px;
+		cursor: pointer;
 	}
 }
