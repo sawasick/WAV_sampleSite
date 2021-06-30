@@ -163,6 +163,12 @@ body {
 	text-decoration: none;
 	color: var(--mainColor);
 }
+.header-sp-nav {
+	display: none;
+}
+.header-sp-icon-wrap {
+	display: none;
+}
 
 /* メインコンテンツでよく使うもの */
 .section {
@@ -200,6 +206,16 @@ body {
 }
 
 /* 右向きの平行四辺形 */
+.section-title-r {
+	position: relative;
+	font-family: 'opinionPro';
+	width: 460px;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 300;
+	z-index: 1;
+}
+
 .section-title-r:before {
 	transform: skewX(-45deg);
 	content: '';
@@ -209,16 +225,6 @@ body {
 	left: 0;
 	right: 0;
 	z-index: -1;
-}
-
-.section-title-r {
-	position: relative;
-	font-family: 'opinionPro';
-	width: 460px;
-	text-align: center;
-	margin: 0 auto;
-	font-weight: 300;
-	z-index: 1;
 }
 
 /* MV */
@@ -288,7 +294,7 @@ body {
 }
 
 .what-list-wrapper:last-child {
-	margin-bottom: 100px;
+	/* margin-bottom: 100px; */
 }
 
 .what-list-wrapper div {
@@ -327,7 +333,7 @@ body {
 
 .members-list li {
 	width: 25%;
-	min-width: 200px;
+	min-width: 150px;
 	list-style: none;
 }
 
@@ -393,4 +399,208 @@ body {
 .totop {
 	width: 2.5vw;
 	margin-left: auto;
+}
+
+/* メディアクエリ */
+@media screen and (max-width: 1040px) {
+	/* フォントサイズ */
+	.txt-large-sp {
+		font-size: 24px !important;
+	}
+
+	.txt-xxmedium-sp {
+		font-size: 22px !important;
+	}
+
+	.txt-xmedium-sp {
+		font-size: 18px !important;
+	}
+
+	.txt-medium-sp {
+		font-size: 16px !important;
+	}
+
+	.txt-small-sp {
+		font-size: 14px !important;
+	}
+
+	/* 繰り返し使う余白 */
+	.layout-bottom-xxmiddle-sp {
+		margin-bottom: 60px !important;
+	}
+	.layout-bottom-xmiddle-sp {
+		margin-bottom: 40px !important;
+	}
+	.layout-bottom-xxsmall-sp {
+		margin-bottom: 20px !important;
+	}
+
+	.layout-bottom-middle {
+		margin-bottom: 30px !important;
+	}
+
+	.section-title-top {
+		margin-top: 60px !important;
+	}
+
+	/* ヘッダー */
+	.header {
+		height: 50px;
+	}
+
+	.header-content-wrapper {
+		width: 90%;
+	}
+
+	.header-logo-wrapper {
+		width: 54px;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.nav-window {
+		display: none;
+	}
+
+	.header-sp-nav {
+		display: none;
+		position: fixed;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: var(--mainColor);
+	}
+
+	.header-sp-nav-list {
+		width: 60%;
+		margin: auto;
+		list-style: none;
+	}
+
+	.header-sp-nav-list li {
+		text-align: center;
+		margin-top: 14vh;
+	}
+
+	.header-sp-nav-list a {
+		color: var(--baseColor);
+		text-decoration: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.header-sp-icon-wrap {
+		width: 20px;
+		height: 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 100;
+	}
+
+	.header-sp-icon-bar1,
+	.header-sp-icon-bar2,
+	.header-sp-icon-bar3 {
+		position: relative;
+		width: 100%;
+		height: 2px;
+		background-color: var(--mainColor);
+		border-radius: 5px;
+		transform-origin: left;
+		transition: all 0.3s ease-out;
+	}
+
+	.is-open .header-sp-icon-bar1 {
+		transform: rotateZ(45deg);
+	}
+	.is-open .header-sp-icon-bar2 {
+		transform: scale(0);
+	}
+	.is-open .header-sp-icon-bar3 {
+		transform: rotateZ(-45deg);
+	}
+
+	/* メインコンテンツでよく使うものt */
+	.content-wrapper {
+		width: 80vw;
+	}
+
+	/* 左向きの平行四辺形 */
+	.section-title-l {
+		width: 70vw;
+	}
+
+	.section-title-l:before {
+	}
+
+	/* 右向きの平行四辺形 */
+	.section-title-r:before {
+	}
+
+	.section-title-r {
+		width: 70vw;
+	}
+
+	/* MV */
+	.section-mv {
+		padding-top: 50px;
+	}
+	.mv-bg-wrapper {
+		overflow: hidden;
+		height: 52vh;
+	}
+	.mv-bg-wrapper img {
+		width: auto;
+		height: 100%;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	.mv-content-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		align-items: center;
+		width: 80%;
+	}
+	.mv-content-wrapper p {
+		position: relative;
+		top: 0;
+		width: 68%;
+		transform: translate(0, 0);
+	}
+	.mv-content-wrapper h1 {
+		margin: 0;
+	}
+
+	/* What we do */
+	.what-list-wrapper {
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 100%;
+	}
+	.what-list-wrapper div {
+		width: 68%;
+	}
+	.what-list-wrapper:first-child {
+		margin-bottom: 40px;
+	}
+	.what-category::before {
+		width: 12px;
+		height: 34px;
+		left: -18px;
+	}
+
+	.taku-ten-link p {
+		color: var(--mainColor);
+		width: 80vw;
+		margin: auto;
+		border: solid 1px var(--accentColor4);
+		border-radius: 21px;
+		cursor: pointer;
+	}
 }
