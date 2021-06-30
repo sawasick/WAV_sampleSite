@@ -361,11 +361,10 @@ body {
   color: var(--mainColor);
 }
 
-.taku-ten-link p {
+.taku-ten-link span {
   color: var(--mainColor);
   width: 25vw;
   padding: 10px 5%;
-  margin: auto;
   border: solid 1px var(--accentColor4);
   border-radius: 21px;
   cursor: pointer;
